@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Anisha | SDG Code Test 1.1</title>
+		
+		<style>
+		body {
+			font-family: 'Open Sans', sans-serif; font-size: 12px;
+		}
+
+		ul.tabs {
+			margin: auto;
+			padding-top:50px;
+			padding-botto:10px;
+			list-style: none;
+			font-weight: bold;
+			width: 75%;
+			text-align:center;
+			padding-inline-start: 0px;	
+		}
+
+		ul.tabs li {
+			float: left;
+			margin: auto;
+			cursor: pointer;
+			padding-bottom: 0px 0px;
+			height: auto;
+			line-height: 30px;
+			border-top: 1px solid #333;
+			border-left: 1px solid #333;
+			border-bottom: 1px solid #333;
+			background-color: #FFFFFF;
+			color: #000000;
+			overflow: auto;
+			position: relative;
+			width: 33%;
+			display:inline-block;	
+		}
+
+		.tab_last { border-right: 1px solid #333; }
+
+		ul.tabs li:hover {
+			background-color: #ccc;
+			color: #333;
+		}
+
+		ul.tabs li.active {
+			background-color: #000000;
+			color: #FFFFFF;
+			border-bottom: 1px solid #fff;
+			display: block;
+		}
+
+		.tab_container {
+
+			border-top: none;
+			clear: both;
+			float: left;
+			width: 100%;
+			background: #fff;
+			overflow: auto;
+		}
+
+		.tab_content {
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			display: none;
+			text-align:center;
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			width: 20%;
+			margin:auto;
+		}
+
+		th, td {
+			text-align: center;
+			padding-right: 15px;
+		}
+
+		th {
+			font-size: 25px;
+			font-weight: normal;
+		}
+
+		.tab_drawer_heading { display: none; }
+
+		@media screen and (max-width: 767px) {
+			.tabs {
+				display: none;
+			}
+			
+			.tab_drawer_heading {
+				background-color: #FFFFFF;;
+				color: #000000;
+				border-top: 1px solid #333;
+				margin: 0;
+				padding:10px 20px;
+				display: block;
+				cursor: pointer;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				font-weight: bold;
+				font-size: 12px;
+			}
+			
+			.tab_drawer_heading:after {
+				content: '\002B';
+				color: #777;
+				font-weight: bold;
+				float: right;
+				margin-left: 5px;
+			}
+
+			.d_active:after {
+				content: "\2212";
+				color:red;
+			}
+			
+		}
+		</style>
+	</head>
+	<body>
+	<ul class="tabs" id="tab_main">
+	  <li class="active" rel="tab1">FIT GUIDE</li>
+	  <li rel="tab2">CARE</li>
+	  <li rel="tab3">MATERIALS</li>
+	</ul>
+	<div class="tab_container">
+	  <h3 class="d_active tab_drawer_heading" rel="tab1">FIT GUIDE</h3>
+	  <div id="tab1" class="tab_content">
+		<p>Integer vel arcu dolor tincidunt dapibus. Nam sit amet lacinia velit. Pellentesque vel urna diam. Nunc sit amet justo malesuada, tincidunt massa eu, placerat est. Suspendisse commodo pellentesque gravida. Donec suscipit vulputate odio, at eleifend purus condimentum in. Praesent sed cursus sem. Donec mattis urna efficitur diam sagittis, id maximus orci dictum. Etiam non congue felis, et varius augue. Aliquam et ullamcorper massa. Nullam interdum lobortis volutpat. Etiam leo arcu, vulputate vel commodo sit amet, ullamcorper varius dui.</p>
+	  </div>
+	  <!-- #tab1 -->
+	  <h3 class="tab_drawer_heading" rel="tab2">CARE</h3>
+	  <div id="tab2" class="tab_content">
+		<p>Quisque a turpis fermentum, dapibus, mauris quis, dignissim ligula. Aliquam aliquet tellus nunc, non fermentum leo dictum vel. Morbi vehicula laoreet felis ac blandit. Sed mi urna, feugiat nec rhoncus vitae, sollicitudin non dui. Vestibulum in porttitor urna, ut posuere elit. Suspendisse mi magna, molestie nec aliquam id, porttitor in ante. Nullam posuere ipsum odio, at placerat ante eleifend vitae. Suspendisse vestibulum magna pretium velit venenatis venenatis. Donec dapibus, justo ut aliquam varius, quam tortor dignissim tellus, imperdiet scelerisque risus ex magna. Nunc sed purus nibh. Phasellus elit erat, scelerisque sed volutpat non, interdum vitae urna.</p>
+	  </div>
+	  <!-- #tab2 -->
+	  <h3 class="tab_drawer_heading" rel="tab3">MATERIALS</h3>
+	  <div id="tab3" class="tab_content">
+	  <div>
+	  <table>
+		<tr>
+		  <th>50%</th>
+		  <th>46%</th>
+		  <th>4%</th>     
+		</tr>
+		<tr>
+		  <td>cashmere</td>
+		  <td>wool</td>
+		  <td>modal</td>
+		</tr>
+	  </table>
+	  <br>
+	  <hr style="width:10%;">
+	</div>
+		<p style="padding-top: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nibh arcu, ultricies nec purus quis, consequat luctus orci. Sed non mi nisi. Donec vulputate erat odio, eget lacinia lectus accumsan sed. Phasellus diam lorem, ullamcorper quis velit a, ultricies facilisis turpis. Sed laoreet efficitur odio, ut consequat arcu laculis non. Quisque lectus ligula, venenatis quis ullamcorper vitae, euismod in nisi. Sed sed arcu tortor. Phasellus a iaculis metus, sed suscipit dui. Nunc mollis, ipsum at tristique dignissim, enim mi sodales nulla, sed dapibus lorem tortor et nisi.</p>
+	  </div>
+	  <!-- #tab3 -->
+
+	</div>
+	
+	  <script>
+		document.querySelectorAll('.tab_content').forEach(function(el) {
+		   el.style.display = 'none';
+		});
+		
+		var els = document.getElementsByClassName('tab_content');
+		els[0].style.display = "block";
+		
+		
+		/* if in tab mode setting active tab*/
+		var ul_main = document.getElementById('tab_main');
+
+		ul_main.addEventListener('click', function (e) {
+			var target = e.target;
+			
+			while (target && target.parentNode !== ul_main) {
+				target = target.parentNode; 
+				if(!target) { return; }		
+			}
+			
+			var items = ul_main.getElementsByTagName("li");
+				for (var i = 0; i < items.length; ++i) {
+					items[i].classList.remove("active");
+				}
+			
+			document.querySelectorAll('.tab_content').forEach(function(el) {
+			   el.style.display = 'none';
+			});
+			
+			var activeTab = target.getAttribute("rel"); 
+			document.getElementById(activeTab).style.display = "block";
+			target.classList.add("active");	
+			
+			var ul_draw = document.getElementsByClassName('tab_drawer_heading');
+			for (var i = 0; i < ul_draw.length; ++i) {
+				ul_draw[i].classList.remove("d_active");
+				if(ul_draw[i].getAttribute("rel")== activeTab){
+					ul_draw[1].classList.add("d_active");
+				}
+			}
+			});
+		
+		/* if in tab mode setting active tab */
+		
+		var ul_d = document.getElementsByClassName('tab_drawer_heading');
+		var ul_m = document.getElementById('tab_main');
+		
+		for(j = 0; j < ul_d.length-1; j++) {
+			
+		var a= ul_d[j].getAttribute("rel");
+		if (typeof a  !== "undefined"){
+		  ul_d[j].addEventListener('click', function(e){
+		  var tab = e.target.getAttribute('rel');
+		  if(a != tab){
+				<!-- ul_d[j].classList.add("d_active"); -->
+			<!-- } -->
+			<!-- else{ -->
+				ul_d[j].classList.remove("d_active");
+			}		  
+		 })
+		 }
+		}
+		
+		Array.from(ul_d).forEach(function(ul_d) {
+			ul_d.addEventListener('click', function (e) {
+			var target = e.target;
+			ul_d.classList.remove("d_active");
+						
+			document.querySelectorAll('.tab_content').forEach(function(el) {
+				el.style.display = 'none';	
+			});
+
+			var d_activeTab = target.getAttribute("rel");
+			document.getElementById(d_activeTab).style.display = "block";
+
+			
+			if(ul_d.getAttribute('rel') == d_activeTab){
+				ul_d.classList.add("d_active");
+			}
+				
+						
+			var items = ul_m.getElementsByTagName("li");
+				for (var i = 0; i < items.length; ++i) {
+					if(items[i].getAttribute("rel")== d_activeTab){
+						items[i].classList.add("active");
+					}
+					else{
+						items[i].classList.remove("active");
+					}
+				}
+		})		
+		});		
+		var items_tab = ul_m.getElementsByTagName("li");
+		var y = items_tab.length-1;
+		items_tab[y].classList.add("tab_last");
+
+	  </script>
+	</body>
+</html>
